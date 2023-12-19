@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Menu",
+    "isTitle": true
+  },
+  {
+    "name": "Pencatatan Pakan Ternak",
+    "url": "index.html",
+    "icon": "flower2"
+  },
+  {
+    "name": "Persediaan",
+    "key": "component",
+    "icon": "stack",
+    "submenu": [
+      {
+        "name": "Aktifitas",
+        "url" : "error-maintenance.html"
+      },
+      {
+        "name": "Laporan",
+        "url" : "error-maintenance.html"
+      }
+    ]
+  },
+  {
+    "name": "Penggemukan",
+    "key": "extra-component",
+    "icon": "collection-fill",
+    "submenu": [
+      {
+        "name": "Aktifitas",
+        "url" : "error-maintenance.html"
+      },
+      {
+        "name": "Laporan",
+        "url" : "error-maintenance.html"
+      }
+    ]
+  },
+  {
+    "name": "Perkawinan",
+    "key": "layout",
+    "icon": "grid-1x2-fill",
+    "submenu": [
+      {
+        "name": "Aktifitas",
+        "url" : "error-maintenance.html"
+      },
+      {
+        "name": "Laporan",
+        "url" : "error-maintenance.html"
+      }
+    ]
+  },
+  {
+    "name": "Keuangan",
+    "key": "form-element",
+    "icon": "hexagon-fill",
+    "submenu": [
+      {
+        "name": "Aktifitas",
+        "url" : "error-maintenance.html"
+      },
+      {
+        "name": "Laporan",
+        "url" : "error-maintenance.html"
+      }
+    ]
+  },
+  {
+    "name": "User",
+    "isTitle": true
+  },
+  {
+    "name": "Account",
+    "key": "account",
+    "icon": "person-circle",
+    "submenu": [
+      {
+        "name": "Profile",
+        "url": "account-profile.html"
+      },
+      {
+        "name": "Security",
+        "url": "account-security.html"
+      }
+    ]
+  }
+]

@@ -1,0 +1,226 @@
+{% set title = 'MataSapi' %}
+{% set filename = 'index.html' %}
+
+{% extends 'src/layouts/master.html' %}
+
+{% block styles %}
+<link rel="stylesheet" href="/assets/scss/iconly.scss">
+{% endblock %}
+
+{% block content %}
+<div class="page-heading">
+    <h3>Pencatatan Pakan Ternak</h3>
+</div> 
+<div class="page-content"> 
+    <section class="row">
+        <div class="col-12 col-lg-9">
+            <!-- <div class="row">
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-4 py-4-5">
+                            <div class="row">
+                                <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                                    <div class="stats-icon purple mb-2">
+                                        <i class="iconly-boldShow"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                                    <h6 class="text-muted font-semibold">Sapi Saya</h6>
+                                    <h6 class="font-extrabold mb-0">8</h6>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card"> 
+                        <div class="card-body px-4 py-4-5">
+                            <div class="row">
+                                <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                                    <div class="stats-icon blue mb-2">
+                                        <i class="iconly-boldProfile"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                                    <h6 class="text-muted font-semibold">Total Sapi</h6>
+                                    <h6 class="font-extrabold mb-0">203.000</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-4 py-4-5">
+                            <div class="row">
+                                <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                                    <div class="stats-icon green mb-2">
+                                        <i class="iconly-boldAdd-User"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                                    <h6 class="text-muted font-semibold">Following</h6>
+                                    <h6 class="font-extrabold mb-0">80.000</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-4 py-4-5">
+                            <div class="row">
+                                <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start ">
+                                    <div class="stats-icon red mb-2">
+                                        <i class="iconly-boldBookmark"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                                    <h6 class="text-muted font-semibold">Saved Post</h6>
+                                    <h6 class="font-extrabold mb-0">112</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <section class="section">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Catatan Ternak</h4>
+                            <form class="form" method="post">
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <label for="feedback1" class="sr-only">Judul Catatan</label>
+                                        <input type="text" id="feedback1" class="form-control" placeholder="Isi judul..."
+                                            name="name">
+                                    </div>
+                                        <div class="form-group">
+                                            <label for="feedback1" class="sr-only">Kode</label>
+                                            <select class="choices form-select">
+                                                <optgroup label="Kode Kandang">
+                                                    <option value="romboid">A001X</option>
+                                                    <option value="trapeze">21F09</option>
+                                                </optgroup>
+                                                <optgroup label="Kode Sapi">
+                                                    <option value="red">AAS92</option>
+                                                    <option value="green">BCS01</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                    <div id="snow">
+                                        <p>Lokasi :</p>
+                                        <p>Pakan :</p>
+                                        <p>Biaya :</p>
+                                    </div>
+                                </div>
+                                <div class="form-actions d-flex justify-content-end mt-3">
+                                    <button type="submit" class="btn btn-primary me-1">Submit</button>
+                                    <button type="reset" class="btn btn-light-primary">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col-12 col-lg-3">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Catatan Terkini</h4>
+                    <div class="form-group position-relative  mb-0 has-icon-left">
+                        <input type="text" class="form-control" placeholder="Cari catatan...">
+                        <div class="form-control-icon">
+                            <svg class="bi" width="1.5em" height="1.5em" fill="currentColor">
+                                <use
+                                    xlink:href="assets/static/images/bootstrap-icons.svg#search" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Pakan Sapi Harian</h5>
+                                <small>2 Jam lalu</small>
+                            </div>
+                            <p class="mb-1">
+                                Donec id elit non mi porta gravida at eget metus. Maecenas sed
+                                diam eget risus varius blandit...
+                            </p>
+                            <small>A001X</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Percobaan pakan tomat</h5>
+                                <small>1 day ago</small>
+                            </div>
+                            <p class="mb-1">
+                                Donec id elit non mi porta gravida at eget metus. Maecenas sed
+                                diam eget risus varius blandit.
+                            </p>
+                            <small>21F09</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">List group item heading</h5>
+                                <small>3 days ago</small>
+                            </div>
+                            <p class="mb-1">
+                                Donec id elit non mi porta gravida at eget metus. Maecenas sed
+                                diam eget risus varius blandit.
+                            </p>
+                            <small>Donec id elit non mi porta.</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">List group item heading</h5>
+                                <small>3 days ago</small>
+                            </div>
+                            <p class="mb-1">
+                                Donec id elit non mi porta gravida at eget metus. Maecenas sed
+                                diam eget risus varius blandit.
+                            </p>
+                            <small>Donec id elit non mi porta.</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">List group item heading</h5>
+                                <small>3 days ago</small>
+                            </div>
+                            <p class="mb-1">
+                                Donec id elit non mi porta gravida at eget metus. Maecenas sed
+                                diam eget risus varius blandit.
+                            </p>
+                            <small>Donec id elit non mi porta.</small>
+                        </a>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination pagination-primary mt-3">
+                                <li class="page-item"><a class="page-link" href="#">
+                                        <span aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
+                                    </a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">
+                                        <span aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
+                                    </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+{% block js %}
+<link rel="stylesheet" href="assets/extensions/quill/quill.snow.css">
+<link rel="stylesheet" href="assets/extensions/quill/quill.bubble.css">
+<script src="assets/extensions/apexcharts/apexcharts.min.js"></script>
+<script src="assets/static/js/pages/dashboard.js"></script>
+<script src="assets/extensions/quill/quill.min.js"></script>
+<script src="assets/static/js/pages/quill.js"></script>
+{% endblock %}
